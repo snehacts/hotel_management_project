@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script  type="text/javascript" src="jj.js"> </script>
+</head>
+<body background="C:\EclipseNew\projectniit\images\logincustomer.jpg">
+
+
+<form  onsubmit="return validations()" action="ServletUL" method="post">
+<table align="center">
+<div style="text-align:center"> 
+
+       
+<h1 align="center">SIGN IN<h1></div>
+<tr><td>UserName <span style="color:red">*</span> : <input type="text"  pattern="[a-zA-z0-9]{1,15}" placeholder="enter user name" id="UserName" name="user_name"><br><br></td></tr>  
+<br>
+<tr><td>Password <span style="color:red">*</span> : <input type="password" id="password" name="password"  pattern="^\S{1,6}$" placeholder="enter your password"><br><br></td></tr>
+
+<tr><td> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<input type="submit" value="Sign In"><br><br></tr></td>
+
+
+
+</form>
+<tr><td>  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<a href="customerSignup.html"><input type="button" value="Create New Account"></a></td></tr>
+</table>
+</body>
+</html>

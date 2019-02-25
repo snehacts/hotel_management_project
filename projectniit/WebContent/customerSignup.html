@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Insert title here</title>
+<script  type="text/javascript" src="jj.js"> </script>
+</head>
+
+
+<body background="C:\EclipseNew\projectniit\images\logincustomer.jpg">
+<h1 align="center">SIGN UP FORM<h1>
+
+<form onsubmit="return validate()"  action="Save" method="post" >
+
+<table align="center">
+
+<tr><td>Full Name <span style="color:red"> *</span> :</td><td><input type="text"  "required" placeholder="enter full name" id="FullName" name="full_name"></td></tr>  
+
+<tr><td>Address <span style="color:red"> *</span> :</td><td><input type="text" placeholder="enter your address" id="Address" name="address" ></td></tr>  
+
+<tr><td>Contact No. <span style="color:red"> *</span> :</td><td><input type="text" pattern="[7-9]{1}[0-9]{9}" placeholder="enter phone number" id="ContactNo" name="contact_number"></td></tr>
+
+<fieldset id="Gender" ><tr><td>Gender <span style="color:red"> *</span> :</td></tr> 
+
+<tr><td>Male</td><td><input type="radio" id="MALE" name="gender"></td></tr>  
+<tr><td>Female</td><td><input type="radio" id="FEMALE" name="gender"></td></tr>  
+<tr><td>Other</td><td><input type="radio" id="Other" name="gender"></td></tr>
+</fieldset>
+
+<tr><td>Date Of Birth <span style="color:red"> *</span> :</td><td><input type="date"  placeholder="YYYY-MM-DD" id="DateOfBirth" name="date_of_birth"></td></tr>
+
+<tr><td>UserName <span style="color:red"> *</span> :</td><td><input type="text" required pattern="[a-zA-z0-9]{15}" placeholder="enter user name" id="UserName" name="user_name"></td></tr>  
+
+<tr><td>Password <span style="color:red"> *</span> :</td><td><input input id="password" name="password" type="password" pattern="^\S{6}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Must have at least 6 characters' : '');
+ if(this.checkValidity()) form.password_two.pattern = this.value;" placeholder="only 6 characters" "required"></td></tr>  
+
+<tr><td>Confirm Password <span style="color:red"> *</span> :</td><td><input input id="password_two" name="repeat_password" type="password" pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ?
+ 'Please enter the same Password as above' : '');" placeholder="Verify Password" "required"></td></tr> 
+ 
+<tr><td>Email Address <span style="color:red"> *</span> :</td><td><input type="Email"   placeholder="enter your email id" id="EmailPassword" name="email_address"></td></tr> 
+<br>
+</table>  
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<button type="submit" value="submit">SUBMIT</button>
+</table>  
+</form>
+</body>
+</html>
